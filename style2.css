@@ -1,0 +1,87 @@
+
+        * {
+        margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+                  font-family: 'Poppins', sans-serif;
+        }
+        body, html {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+
+
+            height: 100vh;
+            width: 100%;
+            background-image: url('https://img.freepik.com/free-vector/minimal-doodle-frame-background-social-story-highlight_53876-97970.jpg?t=st=1731498324~exp=1731501924~hmac=400a315937edeecf0218108a24dd354ecc8a1c18ab60442169f4dd427b2da54b&w=740');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #1f3b57;
+            flex-direction: column;
+            text-align: center;
+            cursor: pointer;
+            overflow: hidden;
+            transition: background-color 0.3s ease;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #003366;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .topics-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            width: 80%;
+            animation: slideIn 1.5s ease-in-out;
+        }
+        .topic {
+            background-color: rgba(254, 242, 208, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+        .topic:hover 
+        {
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            background-color: #555454;
+        }
+        .topic h2 {
+            font-size: 1.6em;
+                                         margin-bottom: 10px;
+            color:                   #1f3b57;
+            transition: color 0.3s ease;
+        }
+        .topic p {
+            font-size: 0.9em;
+            color: #4a4a4a;
+            transition:             color 0.3s ease;
+        }
+        .topic:hover h2, .topic:hover p {
+            color: #fff;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9em;
+            color: #4a4a4a;
+            font-weight: bold;
+        }
+     
+        @keyframes fadeIn {
+            0% { opacity: 0;          transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+ @keyframes slideIn {
+            0% { opacity: 0; transform: translateX(-50px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+

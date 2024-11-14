@@ -1,0 +1,132 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body, html {
+                     display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            color: #1f3b57;
+            background-image: url('https://img.freepik.com/free-vector/tropical-leaf-frame-brown-background_53876-98021.jpg?t=st=1731568138~exp=1731571738~hmac=5bfd8316f248805fa275a5c7f024fcb722d9713a2f452bb11cd0874835ea2efa&w=826');
+            background-size: cover;
+            background-position: center;
+            
+            background-attachment: fixed;
+            padding-bottom: 50px;
+            position: relative;
+            overflow-y: auto;
+        }
+
+        .question-container {
+            width: 80%;
+                max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        .question-container p {
+            font-size: 1.6em;
+                 margin-bottom: 20px;
+        }
+
+        .option-btn {
+            background-color: #f7f7f7;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+             margin: 10px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 100%;
+        }
+
+        .option-btn:hover {
+                  background-color: #afaca9;
+            transform: scale(1.05);
+        }
+
+        #next-btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            display: none;
+            width: 50%;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #next-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+                font-size: 0.9em;
+            color: #4a4a4a;
+            font-weight: bold;
+            width: 100%;
+            text-align: center;
+        }
+
+        .correct {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .incorrect {
+            background-color: #f44336;
+            color: white;
+        }
+
+        .score-container {
+            font-size: 2em;
+            color: #007bff;
+             margin-top: 30px;
+        }
+
+        #alright-btn {
+            background-color: #ff8c00;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+                cursor: pointer;
+            width: 50%;
+            max-width: 150px;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        #alright-btn:hover {
+            background-color: #e67e00;
+        }
+
+        .timer-label {
+            font-size: 1.3em;
+            color: #555;
+            font-weight: bold;
+        }
+
+        #countdown {
+                   font-family: 'Roboto', sans-serif;
+            font-size: 2em;
+            color: #e74c3c;
+            font-weight: 900;
+            margin-bottom: 20px;
+        }

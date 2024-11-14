@@ -1,0 +1,80 @@
+<html>
+<head>
+    <a href="landing.html">
+       
+    </a>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz Topics</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style2.css"> 
+
+<style>
+    
+    .home-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+</head>
+
+<body>
+  
+    <a href="landing.html">
+        <button class="home-button">Home</button>
+    </a>
+
+    <h1>What topic would you like to check your abilities on?</h1>
+    <div class="topics-container">
+        <div class="topic" onclick="startQuiz('History')">
+            <h2>History</h2>
+            <p>Check how good you actually are at HISTORY!</p>
+        </div>
+        <div class="topic" onclick="startQuiz('Sports')">
+            <h2>Sports</h2>
+            <p>Are u well updated with the ongoing sports matter around the world?</p>
+        </div>
+        <div class="topic" onclick="startQuiz('General Knowledge')">
+            <h2>General Knowledge</h2>
+            <p>General Knowledge is the basic stuff you need! Check your abilities!</p>
+        </div>
+        <div class="topic" onclick="startQuiz('Random')">
+            <h2>Random</h2>
+            <p>Take a random quiz with questions from various fields.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Powered by Team 15, Everest</p>
+    </div>
+
+    <script>
+        function startQuiz(topic) {
+            if (topic === 'History' || topic === 'Sports' || topic === 'General Knowledge' || topic==='Random') {
+                window.location.href = 'settings.html?topic=' + topic;
+            }
+        }
+        document.body.addEventListener('mouseover', function() {
+            document.body.style.backgroundColor = '#e5e5e5';
+        });
+
+        document.body.addEventListener('mouseout', function() {
+            document.body.style.backgroundColor = '#f1f5f9';
+        });
+    </script>
+    
+</body>
+</html>
